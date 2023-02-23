@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>  
+    <!--fontawesom4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--googleicons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="mariathi.css">
+    <!--javascript-->
+    <script src="nav.js" defer></script>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="ckacademy.png">
+
+    <title>Home</title>
+</head>
+<body>
+    <i  onclick="topFuntion()" id="mybtn"  style="font-size: 35px;" class="fa fa-arrow-circle-up"></i>
+    <script>
+        let mybutton=document.getElementById("mybtn");
+        window.onscroll=function(){scrollFunction()};
+        function scrollFunction(){
+            if(document.body.scrollTop>50||document.documentElement.scrollTop>50){
+                mybutton.style.display="block";
+            }
+            else{
+                mybutton.style.display="none";
+            }
+        }
+        function topFuntion(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+        </script>
+    <header>
+        <div class="head" >
+            <div class="lm">
+                <p id="ckaca"><b id="ck">CK </b><b id="aca"> ACADEMY</b></p>
+                <p id="line">----------------------------------------------</p>
+                <p id="mo"><i id="motto">Making lives happier </i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="color">
+            <nav class="navbar" id="top">
+                <div class="brand-title">
+                    <img src="ckacademy.png" alt="" width="100vw" height="50vh" class="rounded-circle">
+                </div>
+                <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                <ul class="justify-content-around">
+                    <li><a href="#">Home</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">About Us</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">Courses</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">Career</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">Centers</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">Contact Us</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a href="#">Login/Register</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="divider"></div>
+
+    <div class="divider"></div>
+    <br>
+        <div class="container-fluid" style=" position: center;">
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="4000" pause="hover">
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                  <li data-target="#demo" data-slide-to="4"></li>
+                  <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
+                <div class="carousel-inner" style="text-align: center;">
+                    <div class="carousel-item active">
+                        <img src="inside.jpg" alt="img3"  width="" height="" class="mx-auto d-block img-fluid" >
+                        <div id="cc"class="carousel-caption d-none d-md-block">
+                            <h4>Class Room Inside View</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item " >
+                       <img src="7R6A4397.JPG" alt="img1" width="" height="" class="mx-auto d-block img-fluid" >
+                       <div id="cc" class="carousel-caption d-none d-md-block">
+                        <h4>We Provide Desktop Facilities For evry Trainees</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="text-align: center; " >
+                    <img src="7R6A4401.JPG" alt="img2"  width="1200px" height="" class="mx-auto d-block img-fluid"  >
+                    <div id="cc" class="carousel-caption d-none d-md-block">
+                        <h4>Our Trainer Provide Live Coding Explanation</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="text-align: center; ">
+                    <img src="7R6A4405 (1).JPG" alt="img2"  width="1200px" height="" class="mx-auto d-block img-fluid"  >
+                    <div id="cc" class="carousel-caption d-none d-md-block" >
+                        <h4>We Provide Concurrent Teaching and Coding Practise</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="pic3.jpg" alt="img3"  width="" height="" class="mx-auto d-block img-fluid" >
+                  </div>
+                  <div class="carousel-item" style="text-align: center; ">
+                    <img src="pic4.jpg" alt="img2"  width="1200px" height="" class="mx-auto d-block img-fluid"  >
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev"><i class="fa fa-chevron-circle-left"style="font-size: 40px;"></i></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next"><i class="fa fa-chevron-circle-right"style="font-size: 40px; "></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="divider">&nbsp;</div>
+        <div class="divider">&nbsp;</div>
+        <section id="features">
+            <h2 id="h21">FEATURES WE HAVE</h2>
+            <div class="fea-base">
+            <div class="fea-box">
+                <div>
+                    <i style="margin-bottom: -12px;" class="material-icons">&#xe02f;</i>
+                    <h4 style="margin-bottom: -12px;">CERTIFICATION</h4>
+                    <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ";>We provide certificates for all the courses</p>
+                </div>
+            </div>
+            <div class="fea-box">
+                <i style="margin-bottom: -12px;" class="fa fa-graduation-cap"></i>
+                <h4 style="margin-bottom: -12px;">PLACEMENT</h4>
+                <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">We provide job opportunity for all the candidates in our instution </p>
+            </div>
+        </section>
+        <div class="divider">&nbsp;</div>
+
+        <div class="divider">&nbsp;</div>
+        <section id="course">
+            <h2 id="h22">OUR POPULAR COUSES</h2>
+            <div class="course-box">
+                <div class="courses">
+                    <img  src="frontend.png" alt="img" width="400vw" height="300vh"class="rounded">
+                    <div class="details">
+                        <h6>FRONTEND DEVELOPMENT</h6>
+                        <p>(1 months) <img id= "ci"src="hcbjh.jpg"  alt=""> <img id="ci"src="css.png" alt=""> </p>
+                        <div class="star" >
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                    </div>
+                    <div class="cost">  
+                        <p>&#8377;4130(with gst)</p>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img src="backend.jfif" alt="img" width="400vw" height="300vh"class="rounded">
+                    <div class="details">
+                        <h6>BACKEND DEVELOPMENT</h6>
+                        <p>(2 months)</p>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                    </div>
+                    <div class="cost">  
+                        <p>&#8377;4130(per month with gst)</p>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img  src="database.jpg" alt="img" width="400vw" height="300vh" class="rounded">
+                    <div class="details">
+                        <h6>DB ENGINEERING</h6>
+                        <p>(1 months)</p>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                    </div>
+                    <div class="cost">  
+                        <p>&#8377;4130(with gst)</p>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img src="developer.jpg" alt="img" width="400vw" height="300vh"class="rounded">
+                    <div class="details">
+                        <h6>FULL STACK WEB DEVELOPMENT</h6>
+                        <p>(3 months)</p>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                    </div>
+                    <div class="cost">  
+                        <p>&#8377;4130(per month with gst)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>        
+    <div class="divider">&nbsp;</div>
+
+    <div class="divider">&nbsp;</div>
+    <footer class="container-fluid">
+        <div class="row" id="foot">
+            <div class="col-sm-3" id="f1">
+                <h6 style="text-align: center;">Quick Links</h6>
+                &nbsp;
+                <ul id="quick">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login/Register</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="f1" >
+                <h6 id="smph">Social Media Pages</h6>
+                &nbsp;
+                <ul id="smp">
+                    <li> <a href=""><i class="fa fa-facebook" style="font-size: x-large;"></i></a> </li><br>
+                    <li>  <a href=""><i class="fa fa-whatsapp" style="font-size: x-large;" ></i></a> </li><br>
+                    <li>  <a href=""><i class="fa fa-instagram" style="font-size: x-large;"></i></a> </li>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="f1">
+                <h6  id="R1">Reach us</h6>
+                &nbsp;
+                <ul id="reach" style=" align-items: left;">
+                    <li><address>#74, Ranjanpriyan Nagar,<br>
+                        Velisemmandalam,<br>
+                        Cuddalore.</address></li>
+                    <li>
+                        Contact:&nbsp; <a href="tel:04142 350031">04142-350031</a><br>
+            Mail:&nbsp;<a href="mailto:training@ckacademy.com">training@ckacademy.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="f1">  
+                <h6 style="text-align: center;">Ours</h6>
+                &nbsp;
+                <ul id="our" style="text-align: center;">
+                <li><img src="CavinKare-logo-270x180.png" alt="" width="80vw" height="50vh"></li>
+                &nbsp;
+                <li><img src="download.png" alt="" width="80vw" height="50vh"></li>
+                &nbsp;
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid" id="bot1">
+            <div class="row" id="bot">
+                <div class="col-sm-6" id="g">
+                    <p>CAVINKARE GROUPS</p>
+                </div>
+                <div class="col-sm-6" id="lad">
+                    <p >L&D by Marieswari & Athithya @HEPL CK Academy</p>
+                </div>
+            </div>
+        </div>
+    </footer>                  
+</body>
+</html>
