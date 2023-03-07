@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color:darkslateblue;
+            font-style: italic;
+            text-align: center;
+        }
+        button{
+            width: 70vw;
+            border-radius: 15px;
+            border:1px solid violet;
+            background-color:white;
+        }
+        h1{
+            text-align: center;
+            color:darkorchid;
+            font-variant: small-caps;
+        }
+        h2{
+            font-size:larger;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <p id="crt1"></p>
+    <div class="container">
+    <h1 id="qz"> Online Quiz</h1>
+    <h2>1.How To add Js in Html File?</h3>
+    <button  name="a" ><h3>Head Tag</h3></button><br><br>
+    <button name="a" ><h3>Body Tag</h3></button><br><br>
+    <button name="a" id="correct1"><h3>Both A & B</h3></button><br><br>
+    <button name="a" ><h3>None of the above</h3></button><br><br><br>
+     </div>
+     
+     <p id="crt2"></p>
+    <div class="container">
+    <h2>2.How many Data type in Js?</h2>
+    <button  name="b" ><h3>Six</h3></button><br><br>
+    <button name="b" ><h3>Four</h3></button><br><br>
+    <button name="b" id="correct2"><h3>Eight</h3></button><br><br>
+    <button name="b" ><h3>Seven</h3></button><br><br><br>
+        </div>
+
+        <p id="crt3"></p>
+    <div class="container">
+    <h2>3.Which One is incorrect Data types in Js?</h2>
+    <button  name="c"><h3>String</h3></button><br><br>
+    <button name="c" ><h3>Number</h3></button><br><br>
+    <button name="c" id="correct3"><h3>Resource</h3></button><br><br>
+    <button name="c"><h3>Null</h3></button><br><br><br>
+    </div>
+
+    <p id="crt4"></p>
+    <div class="container">
+    <h2>4.Which one is incorrect Arithmetic Operator?</h2>
+    <button  name="d" ><h3>+</h3></button><br><br>
+    <button name="d" ><h3>-</h3></button><br><br>
+    <button name="d" ><h3>*</h3></button><br><br>
+    <button name="d" id="correct4"><h3>=</h3></button><br><br><br>
+    </div>
+
+    <p id="crt5"></p>
+    <div class="container">
+    <h2>5.How we can declare variable in Js?</h2>
+    <button  name="e" id="correct5"><h3>$</h3></button><br><br>
+    <button name="e" ><h3>&&</h3></button><br><br>
+    <button name="e" ><h3>$$</h3></button><br><br>
+    <button name="e" ><h3>&*</h3></button><br><br><br>
+</div>
+<button  type="submit" font-size="20px">Submit</button>
+<p id="athi" style="color:green"></p> 
+<script>
+    function result(){ 
+
+            if (document.getElementById("correct1").checked)
+        {
+            text="your answer is correct";
+        }
+            else{
+            text="your Answer is Wrong";
+                }
+            document.getElementById("crt1").innerHTML=text;
+
+
+            if (document.getElementById("correct2").checked)
+        {
+            text="your answer is correct";
+        }
+            else{
+            text="your Answer is Wrong"; 
+                }
+            document.getElementById("crt2").innerHTML=text;
+
+            if (document.getElementById("correct3").checked)
+        {
+            text="your answer is correct";
+        }
+            else{
+            text="your Answer is Wrong";  
+                }
+            document.getElementById("crt3").innerHTML=text;
+
+            if (document.getElementById("correct4").checked)
+        {
+            text="your answer is correct";
+        }
+            else{
+            text="your Answer is Wrong"; 
+                }
+            document.getElementById("crt4").innerHTML=text;
+
+            if (document.getElementById("correct5").checked)
+        {
+            text="your answer is correct";
+        }
+            else{
+            text="your Answer is Wrong"; 
+                }
+            document.getElementById("crt5").innerHTML=text;
+
+            }
+
+            
+</script>
+</body>
+</html>
