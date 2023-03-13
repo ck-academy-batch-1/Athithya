@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" ></script>
+
+    <title>form</title>
+    <h1> Form</h1>
+</head>
+<style>
+    body{
+        background-image:url(black.jpg);
+        background-attachment:fixed;
+        color:black;
+      }
+      form {
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid black;
+            background: linear-gradient(45deg,rgb(94, 172, 172),rgb(238, 234, 234));
+            font-variant: small-caps;
+            background-attachment: fixed;
+            width: 60%;
+            border-radius: 5px;
+            color:black;
+            box-shadow: 5px  5px;
+            
+        }
+        
+        h1 {
+            
+            color:slateblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            font-weight: bolder;
+            padding-bottom: 40px;
+            font-size: 40px;
+            text-align: center;
+
+        }
+        
+        label {
+            font-style: normal;
+            font-size: large;
+            font-weight: 200px;
+            color:rebeccapurple;
+        }
+        input{
+            transition:transparent;
+            background:transparent;
+            color: black;
+            font-weight: 200;
+            font-style: italic;
+        }
+    </style>
+<body >
+    <form action="task form.php" method="post" class="was-validated">
+        <div class="container">
+            <div class="form-group">
+                <label > Enter Your Name</label>
+                <input type="text" id="name" class="form-control" autofocus required  >
+                <div class="valid-feedback">go to the next field</div>
+                <div class="Invalid-feedback">please fill this field!</div>
+            </div>
+            
+            <div class="form-group">
+                <label>enter your password:</label>
+                <input type="password" id="psd"name="password "class="form-control" value="123456" maxlength="6" required >
+
+            </div>
+            <div class="form-group ">
+                <label>Age:</label>
+                <input type="number" min="21"  max="25" ><br><br>
+            </div>
+            <label> Enter your Gender:</label>
+            <div class="form-group form-check-inline">
+                <label  class="form-check-label">
+            <input type="radio" name="gender" class="form-check-input">Male</label>
+            </div>
+
+            <div class="form-group form-check-inline">
+                <label class="form-check-label">
+            <input type="radio" name="gender" class="form-check-input">Female</label>
+            </div>
+            <div class="form-group form-check-inline">
+                <label f class="form-check-label">
+            <input type="radio" name="gender" class="form-check-input">Other</label>
+            </div><br>
+            <div class="form-group">
+                <label>Email Id:</label>
+                <input type="email " placeholder="sample@gmail.com" size="40" class="form-control" required><br><br>
+              </div>
+                <div class="form-group">
+                <label>Phone Number:</label>
+                <input type="tel" placeholder="8124864878" maxlength="10" pattern="[0-9]{10}" class="form-control" required><br><br>
+              </div>
+                <div class="form-group">
+                <label >Date Of Birth:</label>
+                <input type="date" class="form-control" style="color: black;"><br><br>
+              </div>
+            <label>Select Your Qualification:</label>
+            <div class="form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="checkbox" class="form-check-input">B.A
+            </div>
+            <div class=" form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="checkbox" class="form-check-input">BSC
+            </div>
+            <div class=" form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="checkbox" class="form-check-input">BCA
+            </div>
+        
+            <label>Select Your College:</label>
+            
+                <select class="form-control">
+                    <option>Krishnasamy Arts and Science Management for Women</option>
+                    <option>Knc</option>
+                    <option>CK</option>
+                </select>
+            </div>
+            <div class="container">
+            <div class="form-group">
+            <label>Address:</label>
+        <textarea  rows="4" columns="8" style="border-radius:20px" class="form-control"></textarea><br><br>
+    </div>
+        <label>Languages Known:</label>
+        <select class="form-group form-control">
+            <option>Tamil</option>
+            <option>English</option> 
+            <option>Hindi</option>
+        </div>
+        </select><br><br>
+        <div class="container">
+        <label>Time:</label>
+        <input type="time" style="color: black;" class="form-control"><br><br>
+        <label>Week:</label>
+        <input type="week" style="color: black;"class="form-control"><br><br>
+        <label>Month:</label>
+        <input type="month" style="color: black;" class="form-control"><br><br>
+        <label> Select Your Fav Color:</label>
+        <input type="color"><br><br>
+        <label> Image:</label><br>
+        <input type="image" src="black.jpg" style="width:5vw;height: 5vh";><br><br>
+        <label>Search Here:</label>
+        <input type="search"><br><br>
+        <label>Range:</label>
+        <input type="range"><br><br>
+        <label> Select Url:</label>
+        <input type="url" class="form-control"><br><br>
+        <label>Upload File:</label>
+        <input type="file" accept="pdf"><br><br>
+        <label>hidden:</label>
+        <input type="hidden" ><br>
+        <input type="submit" value ="submit" style="font-size: medium; height:40px; width: 100px; color: black; background-color: lightgreen; border-radius: 5px; font-variant: small-caps;">
+        <input type="reset" value ="reset" style="font-size: medium; height:40px; width: 100px; color: black; background-color: lightgreen; border-radius: 5px; font-variant: small-caps;">
+        <input type="button" value="clear" style="font-size: medium; height:40px; width: 100px; color: black; background-color: lightgreen; border-radius: 5px; font-variant: small-caps;"><br><br>
+        </div>
+        
+   </form>
+</body>
+</html>
